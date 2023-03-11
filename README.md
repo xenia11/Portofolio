@@ -15,6 +15,7 @@ To run this project locally, follow these steps:
 Clone the repository:
 
 git clone git@github.com:xenia11/Portofolio.git  
+
 Navigate to the project directory:  
 cd portfolio-project  
 Open the index.html file in your web browser.  
