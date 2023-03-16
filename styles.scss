@@ -1,5 +1,3 @@
-//website palette
-
 $primary-blue-color: #004e98;
 $secondary-blue-color: #3a6ea5;
 $primary-orange-color: #ff6700;
@@ -198,7 +196,7 @@ body {
     justify-content: space-evenly;
     align-content: space-around;
     flex-wrap: wrap;
-    background-color: $primary-white-background;
+    background-color: $primary-grey-background;
 }
 
 .project-card {
@@ -223,9 +221,25 @@ body {
 
 .contact {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
     height: 100vh;
+    justify-content: center;
     align-content: center;
-    background-color: $secondary-grey-color;
+    background-color: $primary-white-background;
+}
+
+.footer-style {
+    background-color: $primary-black-color;
+    color: $primary-white-background;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+
+    &__para {
+        color: $primary-white-background;
+    }
 }
