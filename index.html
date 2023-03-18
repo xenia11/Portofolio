@@ -12,58 +12,53 @@
             href="./fontawesome-free-6.3.0-web//css/all.css"
             ;
         />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;700&display=swap"
+            rel="stylesheet"
+        />
     </head>
     <body>
         <header class="navbar">
-            <h1 class="navbar-logo">1011</h1>
             <div>
                 <ul class="navbar-style">
-                    <li class="navbar-style navbar-style__li navbar-style__a">
-                        <a
-                            class="navbar-style navbar-style__a"
-                            href="../HOME/index.html"
+                    <li class="navbar-style navbar-style__li">
+                        <a class="navbar-style navbar-style__a" href="#home"
                             >Home</a
                         >
                     </li>
                     <li class="navbar-style navbar-style__li">
-                        <a
-                            class="navbar-style navbar-style__a"
-                            href="../ABOUT/about.html"
+                        <a class="navbar-style navbar-style__a" href="#about"
                             >About</a
                         >
                     </li>
                     <li class="navbar-style navbar-style__li">
-                        <a
-                            class="navbar-style navbar-style__a"
-                            href="../SKILLS/skills.html"
+                        <a class="navbar-style navbar-style__a" href="#skills"
                             >Skills</a
                         >
                     </li>
                     <li class="navbar-style navbar-style__li">
-                        <a
-                            class="navbar-style navbar-style__a"
-                            href="../PROJECTS/projects.html"
+                        <a class="navbar-style navbar-style__a" href="#projects"
                             >Projects</a
                         >
                     </li>
                     <li class="navbar-style navbar-style__li">
-                        <a
-                            class="navbar-style navbar-style__a"
-                            href="../CONTACT/contact.html"
+                        <a class="navbar-style navbar-style__a" href="#contact"
                             >Contact</a
                         >
                     </li>
                 </ul>
             </div>
         </header>
-        <section class="home">
-            <h1 class="home__intro-header">hi, i'm ksenija</h1>
+        <section class="home" id="home">
+            <h1 class="home__intro-header">Hi. I'm Ksenija.</h1>
             <p class="home__intro-para">Junior Full-Stack Engineer</p>
         </section>
-        <section class="about">
+        <section class="about" id="about">
             <div class="about__div">
                 <h1 class="about__header">About me</h1>
-                <p>
+                <p class="about__para">
                     Hi, there! I'am Ksenija. Despite having a background in
                     languages, I was drawn to software engineering because of
                     the constant challenge and the ability to create innovative
@@ -72,7 +67,7 @@
                     technology, ultimately becoming a proficient full stack
                     software developer.
                 </p>
-                <p>
+                <p class="about__para">
                     My fluency in multiple languages, including English, French,
                     Italian, and Serbian, coupled with my rich cultural
                     experiences gained from living in countries such as Italy,
@@ -81,13 +76,13 @@
                     development pursuits, enabling me to bring a unique
                     perspective and skill set to any situation.
                 </p>
-                <p>
+                <p class="about__para">
                     In my free time, I enjoy exploring the world of culinary
                     arts, experimenting with and perfecting various dishes from
                     a range of cultures and cuisines.
                 </p>
             </div>
-            <div class="about about__div about__div--whtback">
+            <div class="about__div about__div--align-img">
                 <img
                     class="about about__div about__img"
                     src="./ksenija-image.jpg"
@@ -95,167 +90,245 @@
                 />
             </div>
         </section>
-        <section class="skills">
+        <section class="skills" id="skills">
             <div class="skills skills__header">
                 <h1 class="skills skills__header skills__header--title">
                     Technical Skills
                 </h1>
             </div>
-            <div class="skills-div">
-                <img
-                    class="skills-img"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg"
-                />
+            <div class="skills-list">
+                <div class="skill-card">
+                    <img
+                        class="skills-img"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg"
+                        alt="html5"
+                    />
+                    <p class="skills-para">HTML</p>
+                </div>
 
-                <img
-                    class="skills-img"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg"
-                />
+                <div class="skill-card">
+                    <img
+                        class="skills-img"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg"
+                        alt="css3"
+                    />
+                    <p class="skills-para">CSS</p>
+                </div>
 
-                <img
-                    class="skills-img"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg"
-                />
+                <div class="skill-card">
+                    <img
+                        class="skills-img"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg"
+                        alt="sass"
+                    />
 
-                <img
-                    class="skills-img"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg"
-                />
+                    <p class="skills-para">SASS</p>
+                </div>
 
-                <img
-                    class="skills-img"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-                />
+                <div class="skill-card">
+                    <img
+                        class="skills-img"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg"
+                        alt="javascript"
+                    />
+                    <p class="skills-para">JavaScript</p>
+                </div>
 
-                <img
-                    class="skills-img"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain-wordmark.svg"
-                />
+                <div class="skill-card">
+                    <img
+                        class="skills-img"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                        alt="react"
+                    />
+                    <p class="skills-para">React</p>
+                </div>
+                <div class="skill-card">
+                    <img
+                        class="skills-img"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain-wordmark.svg"
+                        alt="firebase"
+                    />
+                    <p class="skills-para">Firebase</p>
+                </div>
 
-                <img
-                    class="skills-img"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-plain.svg"
-                />
+                <div class="skill-card">
+                    <img
+                        class="skills-img"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-plain.svg"
+                        alt="mysql"
+                    />
+                    <p class="skills-para">SQL</p>
+                </div>
 
-                <img
-                    class="skills-img"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-plain-wordmark.svg"
-                />
+                <div class="skill-card">
+                    <img
+                        class="skills-img"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-plain-wordmark.svg"
+                        alt="java"
+                    />
+                    <p class="skills-para">Java</p>
+                </div>
 
-                <img
-                    class="skills-img"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-plain-wordmark.svg"
-                />
+                <div class="skill-card">
+                    <img
+                        class="skills-img"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-plain-wordmark.svg"
+                        alt="spring"
+                    />
+                    <p class="skills-para">Spring</p>
+                </div>
+                <div class="skill-card">
+                    <img
+                        class="skills-img"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain.svg"
+                        alt="git"
+                    />
+                    <p class="skills-para">Git</p>
+                </div>
 
-                <img
-                    class="skills-img"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain.svg"
-                />
-
-                <img
-                    class="skills-img"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-                />
-
-                <img
-                    class="skills-img"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
-                />
+                <div class="skill-card">
+                    <img
+                        class="skills-img"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                        alt="github"
+                    />
+                    <p class="skills-para">GitHub</p>
+                </div>
+                <div class="skill-card">
+                    <img
+                        class="skills-img"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
+                        alt="amazonwebservices"
+                    />
+                    <p class="skills-para">AWS</p>
+                </div>
             </div>
         </section>
-        <section>
-            <div>
-                <h1>Projects</h1>
+        <section class="projects-section" id="projects">
+            <div class="project__header">
+                <h1 class="project__header--title">Projects</h1>
             </div>
-            <div class="projects">
+
+            <div class="projects-list">
+                <div
+                    onclick="window.location.href = 'https://github.com/xenia11/Portofolio.git'"
+                    class="project-card"
+                >
+                    <img
+                        class="projects-card project-card--img"
+                        src="./project.png"
+                        alt="Avatar"
+                    />
+                    <div class="project-card__text">
+                        <h4 class="project-card__text">Portofolio</h4>
+                    </div>
+                </div>
+
                 <div class="project-card">
                     <img
                         class="projects-card project-card--img"
-                        src="./pexels-markus-spiske-965345.jpg"
+                        src="./project.png"
                         alt="Avatar"
                     />
                     <div class="project-card__text">
-                        <h4><b>John Doe</b></h4>
-                        <p>Architect & Engineer</p>
+                        <h4 class="project-card__text">Project 2</h4>
                     </div>
                 </div>
                 <div class="project-card">
                     <img
                         class="projects-card project-card--img"
-                        src="./pexels-markus-spiske-965345.jpg"
+                        src="./project.png"
                         alt="Avatar"
                     />
                     <div class="project-card__text">
-                        <h4><b>John Doe</b></h4>
-                        <p>Architect & Engineer</p>
+                        <h4 class="project-card__text">Project 3</h4>
                     </div>
                 </div>
                 <div class="project-card">
                     <img
-                        class="project projects-card project-card--img"
-                        src="./pexels-markus-spiske-965345.jpg"
+                        class="projects-card project-card--img"
+                        src="./project.png"
                         alt="Avatar"
                     />
                     <div class="project-card__text">
-                        <h4><b>John Doe</b></h4>
-                        <p>Architect & Engineer</p>
+                        <h4 class="project-card__text">Project 4</h4>
                     </div>
                 </div>
                 <div class="project-card">
                     <img
-                        class="project projects-card project-card--img"
-                        src="./pexels-markus-spiske-965345.jpg"
+                        class="projects-card project-card--img"
+                        src="./project.png"
                         alt="Avatar"
                     />
                     <div class="project-card__text">
-                        <h4><b>John Doe</b></h4>
-                        <p>Architect & Engineer</p>
+                        <h4 class="project-card__text">Project 5</h4>
                     </div>
                 </div>
                 <div class="project-card">
                     <img
-                        class="project projects-card project-card--img"
-                        src="./pexels-markus-spiske-965345.jpg"
+                        class="projects-card project-card--img"
+                        src="./project.png"
                         alt="Avatar"
                     />
                     <div class="project-card__text">
-                        <h4><b>John Doe</b></h4>
-                        <p>Architect & Engineer</p>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <img
-                        class="project projects-card project-card--img"
-                        src="./pexels-markus-spiske-965345.jpg"
-                        alt="Avatar"
-                    />
-                    <div class="project-card__text">
-                        <h4><b>John Doe</b></h4>
-                        <p>Architect & Engineer</p>
+                        <h4 class="project-card__text">Project 6</h4>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="contact">
-            <div class="">
-                <h1>Get In Touch</h1>
-                <p>I'd love to hear from you!</p>
+        <section class="contact" id="contact">
+            <div class="contact__intro">
+                <h1 class="contact_intro contact__intro--header">
+                    Get In Touch
+                </h1>
+                <p class="contact__intro contact__intro--para">
+                    I'd love to hear from you!
+                </p>
             </div>
-            <div>
-                <i class="fa-regular fa-envelope"></i>
-                <p>dasicksenija@gmail.com</p>
-            </div>
-            <div>
-                <i class="fa-brands fa-linkedin-in"></i>
-                <p>https://www.linkedin.com/in/ksenija-lunic/</p>
-            </div>
-            <div>
-                <i class="fa-brands fa-github"></i>
-                <p>https://github.com/xenia11</p>
+            <div class="contact-types">
+                <div class="contact-box">
+                    <a
+                        class="contact-box--items"
+                        href="mailto:dasicksenija@gmail.com"
+                    >
+                        <i
+                            class="fa-regular fa-envelope fa-3x contact-box--items"
+                        ></i>
+                        <p class="contact-box--items">dasicksenija@gmail.com</p>
+                    </a>
+                </div>
+                <div class="contact-box">
+                    <a
+                        class="contact-box--items"
+                        href="https://www.linkedin.com/in/ksenija-lunic/"
+                    >
+                        <i
+                            class="fa-brands fa-linkedin-in fa-3x contact-box--items"
+                        >
+                        </i>
+                        <p class="contact-box--items">@ksenija-lunic</p>
+                    </a>
+                </div>
+                <div class="contact-box">
+                    <a
+                        class="contact-box--items"
+                        href="https://github.com/xenia11"
+                    >
+                        <i
+                            class="fa-brands fa-github fa-3x contact-box--items"
+                        ></i>
+                        <p class="contact-box--items">@xenia11</p>
+                    </a>
+                </div>
             </div>
         </section>
-        <footer class="footer-style">
-            <p class="footer-style footer__para">Copyright</p>
-        </footer>
+        <footer id="footer" class="footer-style"></footer>
+        <script>
+            const getCurrentYear = new Date().getFullYear();
+
+            document.getElementById(
+                "footer"
+            ).innerHTML = `Copyright © ${getCurrentYear} Ksenija Lunic`;
+        </script>
     </body>
 </html>
