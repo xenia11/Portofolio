@@ -1,0 +1,44 @@
+@use "./breakpoints";
+@use "./mixins.scss";
+
+@import "./navbar.scss";
+@import "./home.scss";
+@import "./about.scss";
+@import "./skills.scss";
+@import "./projects.scss";
+@import "./contact.scss";
+
+$primary-blue-color: #004e98;
+$secondary-blue-color: #3a6ea5;
+$primary-orange-color: #ff6700;
+$primary-grey-color: #ebebeb;
+$secondary-grey-color: #ccc5b9;
+$primary-black-color: #252422;
+$primary-white-background: #ffffff;
+$primary-blue-hover-background: #d8f6ff;
+$primary-grey-background: #f7f7f8;
+$full-width: 100%;
+$font-bold: bold;
+
+* {
+    @include mixins.primary-font;
+}
+
+body {
+    @include mixins.primary-section-style;
+    width: $full-width;
+    flex-wrap: wrap;
+    background-color: $primary-white-background;
+    margin: 0;
+}
+
+.footer-style {
+    background-color: $primary-white-background;
+    color: $primary-black-color;
+    text-align: center;
+    width: $full-width;
+    padding: 7px;
+    @include mixins.mobile {
+        font-size: 12px;
+    }
+}

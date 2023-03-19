@@ -1,0 +1,73 @@
+@use "./mixins.scss";
+
+$primary-blue-color: #004e98;
+$secondary-blue-color: #3a6ea5;
+$primary-orange-color: #ff6700;
+$primary-grey-color: #ebebeb;
+$secondary-grey-color: #ccc5b9;
+$primary-black-color: #252422;
+$primary-white-background: #ffffff;
+$primary-blue-hover-background: #d8f6ff;
+$primary-grey-background: #f7f7f8;
+$full-width: 100%;
+$font-bold: bold;
+
+.navbar {
+    @include mixins.primary-section-style;
+    justify-content: flex-end;
+    background-color: $primary-white-background;
+    border-bottom: 2px solid lightgrey;
+    align-items: center;
+    flex-wrap: nowrap;
+    color: black;
+    width: $full-width;
+    z-index: 2;
+
+    transition: 2s;
+    position: fixed;
+    top: 0;
+
+    @include mixins.mobile {
+        justify-content: space-evenly;
+    }
+    @include mixins.tablet {
+        justify-content: space-evenly;
+    }
+    @include mixins.laptop {
+        justify-content: flex-end;
+    }
+}
+
+.navbar-style {
+    list-style-type: none;
+    @include mixins.primary-section-style;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 10px;
+
+    @include mixins.mobile {
+        padding: 5px;
+    }
+
+    &__li {
+        font-size: 20px;
+
+        @include mixins.mobile {
+            font-size: 14px;
+        }
+        @include mixins.tablet {
+            font-size: 18px;
+        }
+        @include mixins.laptop {
+            font-size: 20px;
+        }
+    }
+
+    &__a {
+        text-decoration: none;
+    }
+}
+
+.navbar-style__a:hover {
+    background-color: $primary-grey-background;
+}

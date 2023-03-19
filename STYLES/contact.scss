@@ -1,0 +1,117 @@
+@use "./mixins.scss";
+
+$primary-blue-color: #004e98;
+$secondary-blue-color: #3a6ea5;
+$primary-orange-color: #ff6700;
+$primary-grey-color: #ebebeb;
+$secondary-grey-color: #ccc5b9;
+$primary-black-color: #252422;
+$primary-white-background: #ffffff;
+$primary-blue-hover-background: #d8f6ff;
+$primary-grey-background: #f7f7f8;
+$full-width: 100%;
+$font-bold: bold;
+
+.contact {
+    @include mixins.primary-section-style;
+    width: $full-width;
+    height: 500px;
+    justify-content: center;
+
+    background-color: $primary-white-background;
+    flex-wrap: wrap;
+
+    @include mixins.mobile {
+        height: 80vh;
+    }
+}
+
+.contact__intro {
+    width: $full-width;
+    margin-left: 6%;
+    margin-top: 8%;
+
+    &--header {
+        font-size: 36px;
+        font-weight: $font-bold;
+
+        @include mixins.mobile {
+            font-size: 24px;
+        }
+        @include mixins.tablet {
+            font-size: 32px;
+        }
+    }
+
+    &--para {
+        margin: 0;
+        font-size: 20px;
+
+        @include mixins.mobile {
+            font-size: 17px;
+        }
+        @include mixins.tablet {
+            font-size: 19px;
+        }
+    }
+}
+
+.contact-types {
+    @include mixins.primary-section-style;
+    width: $full-width;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    @include mixins.mobile {
+        justify-content: flex-start;
+        margin-left: 15px;
+    }
+    @include mixins.tablet {
+        margin-left: 25px;
+    }
+    @include mixins.laptop {
+        margin-left: 50px;
+    }
+}
+
+.contact-box {
+    display: flex;
+    justify-content: space-between;
+
+    &:visited {
+        color: $secondary-blue-color !important;
+    }
+
+    @include mixins.mobile {
+        width: 100%;
+    }
+    @include mixins.tablet {
+        width: 100%;
+    }
+    @include mixins.laptop {
+        width: 100%;
+    }
+}
+
+.contact-box--items {
+    display: inline-block;
+    vertical-align: middle;
+    text-decoration: none;
+    font-weight: $font-bold;
+    font-size: 22px;
+
+    @include mixins.mobile {
+        font-size: 20px !important;
+    }
+    @include mixins.tablet {
+        font-size: 18px !important;
+    }
+    @include mixins.laptop {
+        font-size: 22px !important;
+    }
+
+    :visited {
+        background-color: $secondary-blue-color !important;
+    }
+}

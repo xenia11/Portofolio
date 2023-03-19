@@ -1,0 +1,58 @@
+@use "./mixins.scss";
+
+$primary-blue-color: #004e98;
+$secondary-blue-color: #3a6ea5;
+$primary-orange-color: #ff6700;
+$primary-grey-color: #ebebeb;
+$secondary-grey-color: #ccc5b9;
+$primary-black-color: #252422;
+$primary-white-background: #ffffff;
+$primary-blue-hover-background: #d8f6ff;
+$primary-grey-background: #f7f7f8;
+$full-width: 100%;
+$font-bold: bold;
+
+.home {
+    @include mixins.primary-section-style;
+    @include mixins.full-width-100vh-height;
+    justify-content: flex-end;
+    align-content: center;
+    flex-wrap: wrap;
+    margin-left: 15%;
+
+    &__intro-header {
+        display: flex;
+        justify-content: flex-start;
+        width: $full-width;
+        font-size: 40px;
+        margin: 0;
+        font-weight: $font-bold;
+
+        @include mixins.mobile {
+            font-size: 27px;
+        }
+        @include mixins.tablet {
+            font-size: 33px;
+        }
+        @include mixins.laptop {
+            font-size: 50px;
+        }
+    }
+
+    &__intro-para {
+        display: flex;
+        justify-content: flex-start;
+        width: $full-width;
+        font-size: 25px;
+
+        @include mixins.mobile {
+            font-size: 15px;
+        }
+        @include mixins.tablet {
+            font-size: 20px;
+        }
+        @include mixins.laptop {
+            font-size: 26px;
+        }
+    }
+}

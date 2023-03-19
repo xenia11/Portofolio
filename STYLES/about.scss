@@ -1,0 +1,101 @@
+@use "./mixins.scss";
+
+$primary-blue-color: #004e98;
+$secondary-blue-color: #3a6ea5;
+$primary-orange-color: #ff6700;
+$primary-grey-color: #ebebeb;
+$secondary-grey-color: #ccc5b9;
+$primary-black-color: #252422;
+$primary-white-background: #ffffff;
+$primary-blue-hover-background: #d8f6ff;
+$primary-grey-background: #f7f7f8;
+$full-width: 100%;
+$font-bold: bold;
+
+.about {
+    width: 100%;
+    height: 100vh;
+    background-color: $primary-grey-background;
+    @include mixins.primary-section-style;
+    @include mixins.full-width-100vh-height;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    flex-wrap: wrap;
+
+    @include mixins.mobile {
+        height: fit-content;
+    }
+    @include mixins.tablet {
+        height: fit-content;
+    }
+
+    &__header {
+        color: $primary-blue-color;
+        font-weight: $font-bold;
+
+        @include mixins.mobile {
+            font-size: 17px;
+        }
+        @include mixins.tablet {
+            font-size: 28px;
+        }
+    }
+
+    &__para {
+        font-size: 17px;
+        @include mixins.mobile {
+            font-size: 12px;
+        }
+        @include mixins.tablet {
+            font-size: 19px;
+        }
+        @include mixins.laptop {
+            font-size: 20px;
+        }
+    }
+
+    &__div {
+        width: 40%;
+        padding: 10px;
+
+        @include mixins.mobile {
+            width: 100%;
+        }
+        @include mixins.tablet {
+            width: 100%;
+        }
+
+        @include mixins.laptop {
+            width: 70%;
+        }
+
+        &--align-img {
+            @include mixins.laptop {
+                display: flex;
+                justify-content: center;
+            }
+        }
+
+        &--whtback {
+            display: flex;
+            justify-content: center;
+            background-color: white;
+            width: 40%;
+            padding-bottom: 64px;
+            box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%),
+                0 6px 20px 0 rgb(0 0 0 / 19%);
+        }
+    }
+
+    &__img {
+        border-radius: 50%;
+        width: 75%;
+        height: 75%;
+        @include mixins.laptop {
+            width: 65%;
+            height: 65%;
+        }
+    }
+}

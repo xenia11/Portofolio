@@ -1,0 +1,82 @@
+@use "./mixins.scss";
+
+$primary-blue-color: #004e98;
+$secondary-blue-color: #3a6ea5;
+$primary-orange-color: #ff6700;
+$primary-grey-color: #ebebeb;
+$secondary-grey-color: #ccc5b9;
+$primary-black-color: #252422;
+$primary-white-background: #ffffff;
+$primary-blue-hover-background: #d8f6ff;
+$primary-grey-background: #f7f7f8;
+$full-width: 100%;
+$font-bold: bold;
+
+.projects-section {
+    @include mixins.primary-section-style;
+    width: $full-width;
+    height: fit-content;
+    background-color: $primary-grey-background;
+    flex-wrap: wrap;
+}
+
+.project__header {
+    margin-left: 6%;
+    margin-top: 8%;
+
+    &--title {
+        font-weight: $font-bold;
+        color: $secondary-blue-color;
+
+        @include mixins.mobile {
+            font-size: 17px;
+        }
+    }
+}
+.projects-list {
+    @include mixins.primary-section-style;
+
+    gap: 15px;
+
+    padding: 70px;
+    width: $full-width;
+    height: fit-content;
+    justify-content: space-evenly;
+    align-content: space-around;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    width: 30%;
+    height: fit-content;
+    border-radius: 5%;
+    border: 2px solid rgb(233 226 226);
+    background-color: $primary-white-background;
+    text-align: center;
+
+    @include mixins.mobile {
+        width: 100%;
+    }
+    @include mixins.tablet {
+        width: 80%;
+    }
+
+    &--img {
+        width: $full-width;
+        border-radius: 5%;
+    }
+
+    &__text {
+        padding: 2px 16px;
+        font-weight: $font-bold;
+        border-radius: 10%;
+        background: #f7f7f8;
+        font-size: 18px;
+        @include mixins.mobile {
+            font-size: 12px;
+        }
+    }
+}
+.project-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,127 @@
+@use "./mixins.scss";
+
+$primary-blue-color: #004e98;
+$secondary-blue-color: #3a6ea5;
+$primary-orange-color: #ff6700;
+$primary-grey-color: #ebebeb;
+$secondary-grey-color: #ccc5b9;
+$primary-black-color: #252422;
+$primary-white-background: #ffffff;
+$primary-blue-hover-background: #d8f6ff;
+$primary-grey-background: #f7f7f8;
+$full-width: 100%;
+$font-bold: bold;
+
+.skills {
+    @include mixins.primary-section-style;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: $full-width;
+    background-color: $primary-white-background;
+    margin-left: 30px;
+    margin-top: 30px;
+
+    @include mixins.mobile {
+        width: 85%;
+        height: fit-content;
+        gap: 5%;
+        margin-bottom: 15px;
+    }
+    @include mixins.tablet {
+        height: fit-content;
+        gap: 5%;
+        margin-bottom: 15px;
+    }
+
+    &__div {
+        display: flex;
+
+        &--img {
+            flex-direction: row;
+        }
+    }
+    &__header {
+        @include mixins.primary-section-style;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: $full-width;
+
+        @include mixins.mobile {
+            font-size: 17px;
+        }
+
+        @include mixins.tablet {
+        }
+
+        &--title {
+            color: $primary-blue-color;
+            font-weight: $font-bold;
+        }
+    }
+    &__skills-list {
+        display: flex;
+        filter: grayscale(100%);
+    }
+
+    &--img {
+        filter: grayscale(100%);
+        width: 25%;
+    }
+}
+
+.skills-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: $full-width;
+    height: 60%;
+    gap: 4%;
+    align-items: center;
+    align-content: center;
+
+    @include mixins.mobile {
+        gap: 5px;
+    }
+    @include mixins.tablet {
+        gap: 5px;
+    }
+}
+
+.skills-img {
+    width: 10%;
+    filter: grayscale(100%);
+    margin-left: 10%;
+}
+
+.skills-para {
+    margin-right: 40%;
+    font-weight: $font-bold;
+
+    @include mixins.mobile {
+        font-size: 12px;
+    }
+}
+
+.skill-card {
+    width: 30%;
+    flex-wrap: nowrap;
+    border: 1px solid #a3a3a6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $primary-grey-background;
+    border-radius: 8%;
+    gap: 32%;
+
+    @include mixins.mobile {
+        width: 75%;
+    }
+    @include mixins.tablet {
+        width: 60%;
+    }
+}
+
+.skill-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
