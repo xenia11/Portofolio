@@ -41,6 +41,9 @@ $width-40: 40%;
         @include mixins.tablet {
             font-size: 28px;
         }
+        @include mixins.tv {
+            font-size: 35px;
+        }
     }
 
     &__para {
@@ -53,6 +56,9 @@ $width-40: 40%;
         }
         @include mixins.laptop {
             font-size: 20px;
+        }
+        @include mixins.tv {
+            font-size: 25px;
         }
     }
 

@@ -26,6 +26,9 @@ $fit-content: fit-content;
         @include mixins.mobile {
             font-size: 17px;
         }
+        @include mixins.tv {
+            font-size: 35px;
+        }
     }
 }
 .projects-list {
@@ -38,6 +41,10 @@ $fit-content: fit-content;
     justify-content: space-evenly;
     align-content: space-around;
     flex-wrap: wrap;
+
+    @include mixins.tv {
+        gap: 20px;
+    }
 }
 
 .project-card {
@@ -53,6 +60,9 @@ $fit-content: fit-content;
     }
     @include mixins.tablet {
         width: 80%;
+    }
+    @include mixins.tv {
+        width: 25%;
     }
 
     &--img {

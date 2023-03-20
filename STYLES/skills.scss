@@ -50,6 +50,9 @@ $align-center: center;
 
         @include mixins.tablet {
         }
+        @include mixins.tv {
+            font-size: 35px;
+        }
 
         &--title {
             color: $primary-blue-color;
@@ -117,8 +120,14 @@ $align-center: center;
     @include mixins.tablet {
         width: 60%;
     }
+    @include mixins.tv {
+        font-size: 25px;
+        padding: 10px;
+    }
 }
 
 .skill-card:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
+
+//do I need box shadow for skills since it is not clickable??

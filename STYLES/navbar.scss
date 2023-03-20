@@ -56,6 +56,9 @@ $font-bold: bold;
         @include mixins.laptop {
             font-size: 20px;
         }
+        @include mixins.tv {
+            font-size: 23px;
+        }
     }
 
     &__a {

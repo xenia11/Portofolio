@@ -28,6 +28,9 @@ $font-bold: bold;
         @include mixins.laptop {
             font-size: 50px;
         }
+        @include mixins.tv {
+            font-size: 65px;
+        }
     }
 
     &__intro-para {
@@ -44,6 +47,9 @@ $font-bold: bold;
         }
         @include mixins.laptop {
             font-size: 26px;
+        }
+        @include mixins.tv {
+            font-size: 37px;
         }
     }
 }

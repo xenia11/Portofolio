@@ -17,6 +17,9 @@ $font-bold: bold;
     @include mixins.mobile {
         height: 80vh;
     }
+    @include mixins.tv {
+        height: 600px;
+    }
 }
 
 .contact__intro {
@@ -34,6 +37,9 @@ $font-bold: bold;
         @include mixins.tablet {
             font-size: 32px;
         }
+        @include mixins.tv {
+            font-size: 44px;
+        }
     }
 
     &--para {
@@ -45,6 +51,9 @@ $font-bold: bold;
         }
         @include mixins.tablet {
             font-size: 19px;
+        }
+        @include mixins.tv {
+            font-size: 24px;
         }
     }
 }

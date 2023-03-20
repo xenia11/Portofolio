@@ -41,4 +41,7 @@ body {
     @include mixins.mobile {
         font-size: 12px;
     }
+    @include mixins.tv {
+        font-size: 18px;
+    }
 }
