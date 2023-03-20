@@ -18,6 +18,10 @@
             href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;700&display=swap"
             rel="stylesheet"
         />
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        />
     </head>
     <body>
         <header class="navbar">
@@ -50,7 +54,7 @@
             <h1 class="home__intro-header">Hi. I'm Ksenija.</h1>
             <p class="home__intro-para">Junior Full-Stack Engineer</p>
             <div class="contact-types">
-                <div class="contact-box">
+                <div class="contact-box" data-aos="zoom-in">
                     <a
                         class="contact-box--items"
                         href="mailto:dasicksenija@gmail.com"
@@ -61,7 +65,7 @@
                         ></i>
                     </a>
                 </div>
-                <div class="contact-box">
+                <div class="contact-box" data-aos="zoom-in">
                     <a
                         class="contact-box--items"
                         href="https://www.linkedin.com/in/ksenija-lunic/"
@@ -73,7 +77,7 @@
                         </i>
                     </a>
                 </div>
-                <div class="contact-box">
+                <div class="contact-box" data-aos="zoom-in">
                     <a
                         class="contact-box--items"
                         href="https://github.com/xenia11"
@@ -371,6 +375,10 @@
             document.getElementById(
                 "footer"
             ).innerHTML = `Copyright © ${getCurrentYear} Ksenija Lunic`;
+        </script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
         </script>
     </body>
 </html>
