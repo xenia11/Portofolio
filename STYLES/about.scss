@@ -1,5 +1,6 @@
 @use "./mixins.scss";
 
+$secondary-blue-color: #3a6ea5;
 $primary-grey-background: #f7f7f8;
 $full-width: 100%;
 $width-40: 40%;
@@ -31,7 +32,7 @@ $width-40: 40%;
     }
 
     &__header {
-        color: $primary-blue-color;
+        color: $secondary-blue-color;
         font-weight: $font-bold;
 
         @include mixins.mobile {
