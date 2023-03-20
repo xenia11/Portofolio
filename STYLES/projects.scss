@@ -13,6 +13,7 @@ $fit-content: fit-content;
     height: $fit-content;
     background-color: $primary-grey-background;
     flex-wrap: wrap;
+    position: relative;
 }
 
 .project__header {

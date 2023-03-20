@@ -11,13 +11,13 @@ $align-center: center;
 
 .skills {
     @include mixins.primary-section-style;
+    position: relative;
     justify-content: center;
     align-items: $align-center;
     flex-wrap: wrap;
     width: $full-width;
     background-color: $primary-white-background;
-    margin-left: 30px;
-    margin-top: 30px;
+    margin: 0;
 
     @include mixins.mobile {
         width: 85%;
@@ -30,6 +30,12 @@ $align-center: center;
         gap: 5%;
         margin-bottom: 15px;
     }
+    @include mixins.laptop {
+    }
+    @include mixins.desktop {
+    }
+    @include mixins.tv {
+    }
 
     &__div {
         display: flex;
@@ -40,6 +46,8 @@ $align-center: center;
     }
     &__header {
         @include mixins.primary-section-style;
+        margin-left: 30px;
+        margin-top: 64px;
         justify-content: flex-start;
         align-items: flex-start;
         width: $full-width;
@@ -71,20 +79,34 @@ $align-center: center;
 }
 
 .skills-list {
+    margin-left: 10%;
+    margin-right: 10%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     width: $full-width;
-    height: 60%;
+    height: 30%;
     gap: 4%;
     align-items: $align-center;
     align-content: center;
+    margin-bottom: 100px;
+    justify-content: space-evenly;
 
     @include mixins.mobile {
         gap: 5px;
     }
     @include mixins.tablet {
         gap: 5px;
+    }
+    @include mixins.laptop {
+    }
+    @include mixins.desktop {
+        height: 30%;
+        width: 70%;
+    }
+    @include mixins.tv {
+        height: 30%;
+        width: 60%;
     }
 }
 
@@ -123,6 +145,8 @@ $align-center: center;
     @include mixins.tv {
         font-size: 25px;
         padding: 10px;
+        width: 28%;
+        gap: 18px;
     }
 }
 
@@ -130,4 +154,62 @@ $align-center: center;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-//do I need box shadow for skills since it is not clickable??
+.custom-shape-divider-top-1679296503 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1679296503 svg {
+    position: relative;
+    display: block;
+    width: calc(164% + 1.3px);
+    height: 155px;
+}
+
+.custom-shape-divider-top-1679296503 .shape-fill {
+    fill: $primary-grey-background;
+}
+.custom-shape-divider-top-1679298226 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1679298226 svg {
+    position: relative;
+    display: block;
+    width: calc(147% + 1.3px);
+    height: 112px;
+}
+
+.custom-shape-divider-top-1679298226 .shape-fill {
+    fill: $primary-grey-background;
+}
+.custom-shape-divider-bottom-1679298953 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1679298953 svg {
+    position: relative;
+    display: block;
+    width: calc(160% + 1.3px);
+    height: 119px;
+}
+
+.custom-shape-divider-bottom-1679298953 .shape-fill {
+    fill: $primary-grey-background;
+}

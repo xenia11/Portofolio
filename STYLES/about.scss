@@ -23,11 +23,15 @@ $width-40: 40%;
     padding-left: 40px;
     padding-right: 40px;
     flex-wrap: wrap;
+    position: relative;
 
     @include mixins.mobile {
         height: fit-content;
     }
     @include mixins.tablet {
+        height: fit-content;
+    }
+    @include mixins.laptop {
         height: fit-content;
     }
 

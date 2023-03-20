@@ -45,7 +45,7 @@
 }
 
 @mixin tv {
-    @media only screen and (min-width: (breakpoints.$desktop-width)) {
+    @media only screen and (min-width: (breakpoints.$desktop-width+1px)) {
         @content;
     }
 }

@@ -6,6 +6,7 @@ $full-width: 100%;
 $font-bold: bold;
 
 .contact {
+    position: relative;
     @include mixins.primary-section-style;
     width: $full-width;
     height: 500px;
@@ -60,10 +61,12 @@ $font-bold: bold;
 
 .contact-types {
     @include mixins.primary-section-style;
-    width: $full-width;
+    width: fit-content;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    margin-left: 15%;
+    gap: 45px;
 
     @include mixins.mobile {
         justify-content: flex-start;
