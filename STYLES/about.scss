@@ -1,19 +1,18 @@
 @use "./mixins.scss";
 
-$primary-blue-color: #004e98;
-$secondary-blue-color: #3a6ea5;
-$primary-orange-color: #ff6700;
-$primary-grey-color: #ebebeb;
-$secondary-grey-color: #ccc5b9;
-$primary-black-color: #252422;
-$primary-white-background: #ffffff;
-$primary-blue-hover-background: #d8f6ff;
 $primary-grey-background: #f7f7f8;
 $full-width: 100%;
-$font-bold: bold;
+$width-40: 40%;
+
+//questions for Remi
+//can we use placeholders inside of a mixin?
+//can we use @extend in mixins?
+//can we use mixin inside of a mixin
+
+//display:flex; justify-content: center
 
 .about {
-    width: 100%;
+    width: $full-width;
     height: 100vh;
     background-color: $primary-grey-background;
     @include mixins.primary-section-style;
@@ -57,14 +56,14 @@ $font-bold: bold;
     }
 
     &__div {
-        width: 40%;
+        width: $width-40;
         padding: 10px;
 
         @include mixins.mobile {
-            width: 100%;
+            width: $full-width;
         }
         @include mixins.tablet {
-            width: 100%;
+            width: $full-width;
         }
 
         @include mixins.laptop {
@@ -82,7 +81,7 @@ $font-bold: bold;
             display: flex;
             justify-content: center;
             background-color: white;
-            width: 40%;
+            width: $width-40;
             padding-bottom: 64px;
             box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%),
                 0 6px 20px 0 rgb(0 0 0 / 19%);

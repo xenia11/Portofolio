@@ -1,21 +1,16 @@
 @use "./mixins.scss";
 
-$primary-blue-color: #004e98;
 $secondary-blue-color: #3a6ea5;
-$primary-orange-color: #ff6700;
-$primary-grey-color: #ebebeb;
-$secondary-grey-color: #ccc5b9;
-$primary-black-color: #252422;
 $primary-white-background: #ffffff;
-$primary-blue-hover-background: #d8f6ff;
 $primary-grey-background: #f7f7f8;
 $full-width: 100%;
 $font-bold: bold;
+$fit-content: fit-content;
 
 .projects-section {
     @include mixins.primary-section-style;
     width: $full-width;
-    height: fit-content;
+    height: $fit-content;
     background-color: $primary-grey-background;
     flex-wrap: wrap;
 }
@@ -37,10 +32,9 @@ $font-bold: bold;
     @include mixins.primary-section-style;
 
     gap: 15px;
-
     padding: 70px;
     width: $full-width;
-    height: fit-content;
+    height: $fit-content;
     justify-content: space-evenly;
     align-content: space-around;
     flex-wrap: wrap;
@@ -48,14 +42,14 @@ $font-bold: bold;
 
 .project-card {
     width: 30%;
-    height: fit-content;
+    height: $fit-content;
     border-radius: 5%;
     border: 2px solid rgb(233 226 226);
     background-color: $primary-white-background;
     text-align: center;
 
     @include mixins.mobile {
-        width: 100%;
+        width: $full-width;
     }
     @include mixins.tablet {
         width: 80%;

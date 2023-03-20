@@ -1,10 +1,5 @@
 @use "./mixins.scss";
 
-$primary-blue-color: #004e98;
-$secondary-blue-color: #3a6ea5;
-$primary-orange-color: #ff6700;
-$primary-grey-color: #ebebeb;
-$secondary-grey-color: #ccc5b9;
 $primary-black-color: #252422;
 $primary-white-background: #ffffff;
 $primary-blue-hover-background: #d8f6ff;
@@ -19,7 +14,7 @@ $font-bold: bold;
     border-bottom: 2px solid lightgrey;
     align-items: center;
     flex-wrap: nowrap;
-    color: black;
+    color: $primary-black-color;
     width: $full-width;
     z-index: 2;
 

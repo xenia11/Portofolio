@@ -1,21 +1,18 @@
 @use "./mixins.scss";
 
 $primary-blue-color: #004e98;
-$secondary-blue-color: #3a6ea5;
-$primary-orange-color: #ff6700;
-$primary-grey-color: #ebebeb;
-$secondary-grey-color: #ccc5b9;
-$primary-black-color: #252422;
 $primary-white-background: #ffffff;
-$primary-blue-hover-background: #d8f6ff;
 $primary-grey-background: #f7f7f8;
 $full-width: 100%;
 $font-bold: bold;
+$align-center: center;
+
+//need a better code cleanup
 
 .skills {
     @include mixins.primary-section-style;
     justify-content: center;
-    align-items: center;
+    align-items: $align-center;
     flex-wrap: wrap;
     width: $full-width;
     background-color: $primary-white-background;
@@ -77,7 +74,7 @@ $font-bold: bold;
     width: $full-width;
     height: 60%;
     gap: 4%;
-    align-items: center;
+    align-items: $align-center;
     align-content: center;
 
     @include mixins.mobile {
@@ -109,7 +106,7 @@ $font-bold: bold;
     border: 1px solid #a3a3a6;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: $align-center;
     background-color: $primary-grey-background;
     border-radius: 8%;
     gap: 32%;
