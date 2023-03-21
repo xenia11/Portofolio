@@ -40,7 +40,7 @@ $width-40: 40%;
         font-weight: $font-bold;
 
         @include mixins.mobile {
-            font-size: 17px;
+            font-size: 22px;
         }
         @include mixins.tablet {
             font-size: 28px;
@@ -53,7 +53,7 @@ $width-40: 40%;
     &__para {
         font-size: 17px;
         @include mixins.mobile {
-            font-size: 12px;
+            font-size: 15px;
         }
         @include mixins.tablet {
             font-size: 19px;

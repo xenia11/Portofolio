@@ -14,6 +14,10 @@ $fit-content: fit-content;
     background-color: $primary-grey-background;
     flex-wrap: wrap;
     position: relative;
+
+    @include mixins.mobile {
+        gap: 20px;
+    }
 }
 
 .project__header {
@@ -25,7 +29,7 @@ $fit-content: fit-content;
         color: $secondary-blue-color;
 
         @include mixins.mobile {
-            font-size: 17px;
+            font-size: 22px;
         }
         @include mixins.tv {
             font-size: 35px;
@@ -43,6 +47,12 @@ $fit-content: fit-content;
     align-content: space-around;
     flex-wrap: wrap;
 
+    @include mixins.mobile {
+        padding: 22px;
+    }
+    @include mixins.tablet {
+        align-content: space-evenly;
+    }
     @include mixins.tv {
         gap: 20px;
     }
@@ -57,10 +67,10 @@ $fit-content: fit-content;
     text-align: center;
 
     @include mixins.mobile {
-        width: $full-width;
+        width: 45%;
     }
     @include mixins.tablet {
-        width: 80%;
+        width: 30%;
     }
     @include mixins.tv {
         width: 25%;
@@ -79,6 +89,9 @@ $fit-content: fit-content;
         font-size: 18px;
         @include mixins.mobile {
             font-size: 12px;
+        }
+        @include mixins.tv {
+            font-size: 23px;
         }
     }
 }

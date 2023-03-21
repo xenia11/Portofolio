@@ -9,25 +9,27 @@ $font-bold: bold;
     justify-content: flex-start;
     align-content: center;
     flex-wrap: wrap;
-    position: relative;
+    margin-left: 15%;
 
     &__intro-header {
-        margin-left: 15%;
         display: flex;
+        justify-content: flex-start;
         width: $full-width;
         font-size: 40px;
         margin: 0;
         font-weight: $font-bold;
-        margin-left: 15%;
 
         @include mixins.mobile {
-            font-size: 27px;
+            font-size: 34px;
         }
         @include mixins.tablet {
-            font-size: 33px;
+            font-size: 41px;
         }
         @include mixins.laptop {
             font-size: 50px;
+        }
+        @include mixins.desktop {
+            font-size: 45px;
         }
         @include mixins.tv {
             font-size: 65px;
@@ -39,19 +41,21 @@ $font-bold: bold;
         justify-content: flex-start;
         width: $full-width;
         font-size: 25px;
-        margin-left: 15%;
 
         @include mixins.mobile {
-            font-size: 15px;
+            font-size: 19px;
         }
         @include mixins.tablet {
-            font-size: 20px;
+            font-size: 25px;
         }
         @include mixins.laptop {
             font-size: 26px;
         }
+        @include mixins.desktop {
+            font-size: 27px;
+        }
         @include mixins.tv {
-            font-size: 37px;
+            font-size: 65px;
         }
     }
 }

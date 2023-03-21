@@ -26,7 +26,7 @@ $font-bold: bold;
         justify-content: space-evenly;
     }
     @include mixins.tablet {
-        justify-content: space-evenly;
+        justify-content: flex-end;
     }
     @include mixins.laptop {
         justify-content: flex-end;
@@ -42,22 +42,26 @@ $font-bold: bold;
 
     @include mixins.mobile {
         padding: 5px;
+        gap: 16px;
+    }
+    @include mixins.tv {
+        gap: 26px;
     }
 
     &__li {
-        font-size: 20px;
+        font-size: 22px;
 
         @include mixins.mobile {
-            font-size: 14px;
-        }
-        @include mixins.tablet {
             font-size: 18px;
         }
+        @include mixins.tablet {
+            font-size: 21px;
+        }
         @include mixins.laptop {
-            font-size: 20px;
+            font-size: 22px;
         }
         @include mixins.tv {
-            font-size: 23px;
+            font-size: 27px;
         }
     }
 

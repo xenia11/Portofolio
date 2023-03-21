@@ -5,120 +5,65 @@ $primary-white-background: #ffffff;
 $full-width: 100%;
 $font-bold: bold;
 
-.contact {
-    position: relative;
-    @include mixins.primary-section-style;
-    width: $full-width;
-    height: 500px;
-    justify-content: center;
-
-    background-color: $primary-white-background;
-    flex-wrap: wrap;
-
-    @include mixins.mobile {
-        height: 80vh;
-    }
-    @include mixins.tv {
-        height: 600px;
-    }
-}
-
-.contact__intro {
-    width: $full-width;
-    margin-left: 6%;
-    margin-top: 8%;
-
-    &--header {
-        font-size: 36px;
-        font-weight: $font-bold;
-
-        @include mixins.mobile {
-            font-size: 24px;
-        }
-        @include mixins.tablet {
-            font-size: 32px;
-        }
-        @include mixins.tv {
-            font-size: 44px;
-        }
-    }
-
-    &--para {
-        margin: 0;
-        font-size: 20px;
-
-        @include mixins.mobile {
-            font-size: 17px;
-        }
-        @include mixins.tablet {
-            font-size: 19px;
-        }
-        @include mixins.tv {
-            font-size: 24px;
-        }
-    }
-}
-
 .contact-types {
     @include mixins.primary-section-style;
     width: fit-content;
     display: flex;
     justify-content: space-evenly;
-    flex-wrap: wrap;
-    margin-left: 15%;
-    gap: 45px;
+    flex-wrap: nowrap;
+    margin-left: 2px;
+    gap: 20px;
 
     @include mixins.mobile {
         justify-content: flex-start;
-        margin-left: 15px;
+        gap: 30px;
     }
     @include mixins.tablet {
-        margin-left: 25px;
+        gap: 24px;
     }
     @include mixins.laptop {
-        margin-left: 50px;
+    }
+    @include mixins.tv {
+        gap: 41px;
+        margin-left: 5px;
+    }
+
+    &__contact-box {
+        display: flex;
+        justify-content: space-between;
+
+        &--text-decor {
+            text-decoration: none;
+            @include mixins.mobile {
+                font-size: 13px !important;
+            }
+            @include mixins.tablet {
+                font-size: 18px !important;
+            }
+            @include mixins.laptop {
+                font-size: 22px !important;
+            }
+            @include mixins.tv {
+                font-size: 30px;
+            }
+        }
     }
 }
 
-.contact-box {
-    display: flex;
-    justify-content: space-between;
+// .contact-box--items {
+//     display: inline-block;
+//     vertical-align: middle;
+//     text-decoration: none;
+//     font-weight: $font-bold;
+//     font-size: 22px;
 
-    &:visited {
-        color: $secondary-blue-color !important;
-    }
-
-    @include mixins.mobile {
-        width: 100%;
-    }
-    @include mixins.tablet {
-        width: 100%;
-    }
-    @include mixins.laptop {
-        width: 100%;
-    }
-}
-
-.contact-box--items {
-    display: inline-block;
-    vertical-align: middle;
-    text-decoration: none;
-    font-weight: $font-bold;
-    font-size: 22px;
-
-    @include mixins.mobile {
-        font-size: 20px !important;
-    }
-    @include mixins.tablet {
-        font-size: 18px !important;
-    }
-    @include mixins.laptop {
-        font-size: 22px !important;
-    }
-
-    :visited {
-        background-color: $secondary-blue-color !important;
-
-        //test if this is working
-    }
-}
+//     @include mixins.mobile {
+//         font-size: 20px !important;
+//     }
+//     @include mixins.tablet {
+//         font-size: 18px !important;
+//     }
+//     @include mixins.laptop {
+//         font-size: 22px !important;
+//     }
+// }
