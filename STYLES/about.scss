@@ -34,6 +34,9 @@ $width-40: 40%;
     @include mixins.laptop {
         height: fit-content;
     }
+    @include mixins.tv {
+        height: fit-content;
+    }
 
     &__header {
         color: $secondary-blue-color;
@@ -86,6 +89,10 @@ $width-40: 40%;
                 display: flex;
                 justify-content: center;
             }
+            @include mixins.tablet {
+                display: flex;
+                justify-content: center;
+            }
         }
 
         &--whtback {
@@ -106,6 +113,10 @@ $width-40: 40%;
         @include mixins.laptop {
             width: 65%;
             height: 65%;
+        }
+        @include mixins.tablet {
+            width: 53%;
+            height: 53%;
         }
     }
 }

@@ -44,26 +44,8 @@ $font-bold: bold;
                 font-size: 22px !important;
             }
             @include mixins.tv {
-                font-size: 30px;
+                font-size: 20px;
             }
         }
     }
 }
-
-// .contact-box--items {
-//     display: inline-block;
-//     vertical-align: middle;
-//     text-decoration: none;
-//     font-weight: $font-bold;
-//     font-size: 22px;
-
-//     @include mixins.mobile {
-//         font-size: 20px !important;
-//     }
-//     @include mixins.tablet {
-//         font-size: 18px !important;
-//     }
-//     @include mixins.laptop {
-//         font-size: 22px !important;
-//     }
-// }

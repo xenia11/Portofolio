@@ -32,7 +32,7 @@ $font-bold: bold;
             font-size: 45px;
         }
         @include mixins.tv {
-            font-size: 65px;
+            font-size: 50px;
         }
     }
 
@@ -55,7 +55,7 @@ $font-bold: bold;
             font-size: 27px;
         }
         @include mixins.tv {
-            font-size: 65px;
+            font-size: 30px;
         }
     }
 }

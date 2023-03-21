@@ -103,6 +103,7 @@ $align-center: center;
         gap: 10px;
         height: 35vh;
         margin-bottom: 160px;
+        width: 52%;
     }
     @include mixins.laptop {
     }
@@ -160,6 +161,7 @@ $align-center: center;
     }
     @include mixins.tablet {
         width: 40%;
+        gap: 10%;
     }
     @include mixins.tv {
         font-size: 25px;
