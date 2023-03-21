@@ -90,6 +90,11 @@
   margin-left: 15%;
   margin-bottom: 0;
 }
+@media only screen and (max-width: 480px) {
+  .home {
+    height: 100vh;
+  }
+}
 .home__intro-header {
   display: flex;
   justify-content: flex-start;
@@ -100,7 +105,6 @@
 }
 @media only screen and (max-width: 480px) {
   .home__intro-header {
-    height: 100vh;
     font-size: 34px;
   }
 }

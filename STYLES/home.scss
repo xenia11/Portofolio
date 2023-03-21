@@ -12,6 +12,10 @@ $font-bold: bold;
     margin-left: 15%;
     margin-bottom: 0;
 
+    @include mixins.mobile {
+        height: 100vh;
+    }
+
     &__intro-header {
         display: flex;
         justify-content: flex-start;
@@ -21,7 +25,6 @@ $font-bold: bold;
         font-weight: $font-bold;
 
         @include mixins.mobile {
-            height: 100vh;
             font-size: 34px;
         }
         @include mixins.tablet {
