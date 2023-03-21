@@ -21,6 +21,7 @@ $font-bold: bold;
         font-weight: $font-bold;
 
         @include mixins.mobile {
+            height: 100vh;
             font-size: 34px;
         }
         @include mixins.tablet {
