@@ -11,6 +11,7 @@ $align-center: center;
 
 .skills {
     @include mixins.primary-section-style;
+    cursor: pointer;
     position: relative;
     justify-content: center;
     align-items: $align-center;
